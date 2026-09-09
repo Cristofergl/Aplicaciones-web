@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de perfumes para hombre y mujer con detalles de aromas, precios y notas olfativas.">
+  <meta name="keywords" content="perfumes, fragancias, bharara, dolce gabbana, aromas">
+  <title>Catálogo de Perfumes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor navegacion-flex">
+      <div class="logo">
+        <h2>Perfumes Selectos</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#filtros">Filtros</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#tabla-info">Guía</a></li>
+          <li><a href="html/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="portada">
+      <div class="contenedor grid-portada">
+        <div class="texto-portada">
+          <h1>Catálogo de Perfumes y Fragancias</h1>
+          <p>Encuentra tu loción ideal según el clima, ocasión o tipo de notas aromáticas. Productos originales con excelente fijación y proyección.</p>
+          <a href="#catalogo" class="boton-principal">Ver Catálogo</a>
+        </div>
+        <div class="imagen-portada">
+          <img src="img/mandarin2.webp" alt="Frascos de perfume exhibidos en mostrador">
+        </div>
+      </div>
+    </section>
+
+    <section id="filtros" class="seccion-filtros">
+      <div class="contenedor">
+        <form class="formulario-filtros">
+          <fieldset>
+            <legend>Buscar por preferencias</legend>
+
+            <div class="rejilla-filtros">
+              <div class="campo-filtro">
+                <label for="genero">Para:</label>
+                <select id="genero" name="genero">
+                  <option value="todos">Todos</option>
+                  <option value="hombre">Caballero</option>
+                  <option value="mujer">Dama</option>
+                  <option value="unisex">Unisex</option>
+                </select>
+              </div>
+
+              <div class="campo-filtro">
+                <label for="clima">Clima / Temporada:</label>
+                <select id="clima" name="clima">
+                  <option value="todos">Cualquier clima</option>
+                  <option value="calor">Calor / Primavera-Verano</option>
+                  <option value="frio">Frío / Otoño-Invierno</option>
+                  <option value="versatil">Versátil</option>
+                </select>
+              </div>
+
+              <div class="campo-filtro">
+                <label for="tipo">Familia olfativa:</label>
+                <select id="tipo" name="tipo">
+                  <option value="todos">Todos los aromas</option>
+                  <option value="fresco">Cítricos y Frescos</option>
+                  <option value="dulce">Dulces y Frutales</option>
+                  <option value="amaderado">Amaderados y Cuero</option>
+                </select>
+              </div>
+
+              <div class="campo-filtro">
+                <label for="precio">Rango de precio:</label>
+                <select id="precio" name="precio">
+                  <option value="todos">Cualquier precio</option>
+                  <option value="bajo">Menos de $1,800 MXN</option>
+                  <option value="medio">$1,800 a $2,500 MXN</option>
+                  <option value="alto">Más de $2,500 MXN</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="acciones-filtro">
+              <button type="submit" class="boton-filtro">Filtrar</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <section id="catalogo" class="seccion-catalogo">
+      <div class="contenedor">
+        <h2>Perfumes en Existencia</h2>
+        <p class="descripcion-seccion">Fichas con notas de salida, tipo de concentración y costo.</p>
+
+        <div class="contenedor-tarjetas">
+
+          <!-- Caballero -->
+          <article class="tarjeta-perfume" data-genero="hombre" data-clima="calor" data-aroma="fresco" data-precio="medio">
+            <div class="caja-imagen">
+              <img src="img/Dolce y Gabbana.avif" alt="Perfume Dolce and Gabbana Light Blue Pour Homme" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Fresco / Cítrico</span>
+                <span class="etiqueta">Calor</span>
+              </div>
+              <h3>Light Blue Pour Homme</h3>
+              <p class="marca">Dolce & Gabbana · Caballero</p>
+              <p class="descripcion-aroma">Cítricos del mediterráneo con toronja jugosa, enebro fresco, pimienta y fondo limpio.</p>
+              <div class="precio-caja">
+                <span class="precio">$1,890 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="hombre" data-clima="versatil" data-aroma="dulce" data-precio="alto">
+            <div class="caja-imagen">
+              <img src="img/bharara.webp" alt="Perfume Bharara King para hombre" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Dulce / Frutal</span>
+                <span class="etiqueta">Versátil</span>
+              </div>
+              <h3>King Pour Homme</h3>
+              <p class="marca">Bharara · Caballero</p>
+              <p class="descripcion-aroma">Aroma intenso con proyección duradera. Naranja dulce, bergamota, vainilla cremosa y ámbar.</p>
+              <div class="precio-caja">
+                <span class="precio">$2,650 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="hombre" data-clima="frio" data-aroma="amaderado" data-precio="medio">
+            <div class="caja-imagen">
+              <img src="img/Versace Eros.webp" alt="Perfume Versace Eros Eau de Parfum" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Amaderado / Dulce</span>
+                <span class="etiqueta">Frío</span>
+              </div>
+              <h3>Eros Pour Homme</h3>
+              <p class="marca">Versace · Caballero</p>
+              <p class="descripcion-aroma">Salida fresca de menta verde con manzana confitada, corazón de haba tonka y fondo de cedro.</p>
+              <div class="precio-caja">
+                <span class="precio">$2,100 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="hombre" data-clima="calor" data-aroma="fresco" data-precio="medio">
+            <div class="caja-imagen">
+              <img src="img/acqua di gio.webp" alt="Perfume Acqua Di Giò Giorgio Armani" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Fresco / Acuático</span>
+                <span class="etiqueta">Calor</span>
+              </div>
+              <h3>Acqua Di Giò</h3>
+              <p class="marca">Giorgio Armani · Caballero</p>
+              <p class="descripcion-aroma">Frescura marina con bergamota de Calabria, romero y pachulí mediterráneo.</p>
+              <div class="precio-caja">
+                <span class="precio">$2,250 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="hombre" data-clima="frio" data-aroma="amaderado" data-precio="alto">
+            <div class="caja-imagen">
+              <img src="img/bad boy carolina e.webp" alt="Perfume Bad Boy Carolina Herrera" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Amaderado / Especiado</span>
+                <span class="etiqueta">Frío</span>
+              </div>
+              <h3>Bad Boy</h3>
+              <p class="marca">Carolina Herrera · Caballero</p>
+              <p class="descripcion-aroma">Pimienta negra y blanca con bergamota verde, haba tonka, cacao y madera de cedro.</p>
+              <div class="precio-caja">
+                <span class="precio">$2,700 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="hombre" data-clima="frio" data-aroma="dulce" data-precio="medio">
+            <div class="caja-imagen">
+              <img src="img/invictus victory elixir.webp" alt="Perfume Invictus Victory Elixir Paco Rabanne" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Dulce / Ámbar</span>
+                <span class="etiqueta">Frío</span>
+              </div>
+              <h3>Invictus Victory Elixir</h3>
+              <p class="marca">Paco Rabanne · Caballero</p>
+              <p class="descripcion-aroma">Aroma ambarado intenso con lavanda fresca, cardamomo, incienso misterioso y vainilla.</p>
+              <div class="precio-caja">
+                <span class="precio">$2,400 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="hombre" data-clima="frio" data-aroma="dulce" data-precio="medio">
+            <div class="caja-imagen">
+              <img src="img/Scandal.webp" alt="Perfume Scandal Pour Homme Jean Paul Gaultier" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Dulce / Caramelo</span>
+                <span class="etiqueta">Frío</span>
+              </div>
+              <h3>Scandal Pour Homme</h3>
+              <p class="marca">Jean Paul Gaultier · Caballero</p>
+              <p class="descripcion-aroma">Salvia amancebada con caramelo goloso, haba tonka sensualmente dulce y vetiver.</p>
+              <div class="precio-caja">
+                <span class="precio">$2,300 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dama -->
+          <article class="tarjeta-perfume" data-genero="mujer" data-clima="frio" data-aroma="dulce" data-precio="medio">
+            <div class="caja-imagen">
+              <img src="img/carolina eerrera.webp" alt="Perfume Good Girl Carolina Herrera 150 ml" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Dulce / Seductor</span>
+                <span class="etiqueta">Frío</span>
+              </div>
+              <h3>Good Girl 150 ml</h3>
+              <p class="marca">Carolina Herrera · Dama</p>
+              <p class="descripcion-aroma">Aroma dulce y seductor con notas de haba tonka, cacao, café y jazmín sambac.</p>
+              <div class="precio-caja">
+                <span class="precio">$2,391.08 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="mujer" data-clima="versatil" data-aroma="fresco" data-precio="bajo">
+            <div class="caja-imagen">
+              <img src="img/dolce gabana intense mujer.webp" alt="Perfume Q Intense Dolce and Gabbana 100 ml" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Fresco / Frutal</span>
+                <span class="etiqueta">Versátil</span>
+              </div>
+              <h3>Q Intense 100 ml</h3>
+              <p class="marca">Dolce & Gabbana · Dama</p>
+              <p class="descripcion-aroma">Fragancia femenina magnética con cereza oscura, limón siciliano y flor de azahar.</p>
+              <div class="precio-caja">
+                <span class="precio">$1,439.10 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="mujer" data-clima="frio" data-aroma="dulce" data-precio="medio">
+            <div class="caja-imagen">
+              <img src="img/paco rabane mujer.webp" alt="Perfume Lady Million Fabulous Intense Paco Rabanne 80 ml" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Dulce / Floral</span>
+                <span class="etiqueta">Frío</span>
+              </div>
+              <h3>Lady Million Fabulous 80 ml</h3>
+              <p class="marca">Paco Rabanne · Dama</p>
+              <p class="descripcion-aroma">Toque floral oriental brillante con mandarina, nardo blanco, vainilla y musgo.</p>
+              <div class="precio-caja">
+                <span class="precio">$1,839.08 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="mujer" data-clima="frio" data-aroma="dulce" data-precio="medio">
+            <div class="caja-imagen">
+              <img src="img/scandal mujer.webp" alt="Perfume Scandal Le Parfum Intense Jean Paul Gaultier 80 ml" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Dulce / Caramelo</span>
+                <span class="etiqueta">Frío</span>
+              </div>
+              <h3>Scandal Le Parfum 80 ml</h3>
+              <p class="marca">Jean Paul Gaultier · Dama</p>
+              <p class="descripcion-aroma">Dulce adictivo y potente con jazmín, caramelo salado y fondo de vainilla negra.</p>
+              <div class="precio-caja">
+                <span class="precio">$2,023.08 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="mujer" data-clima="versatil" data-aroma="dulce" data-precio="medio">
+            <div class="caja-imagen">
+              <img src="img/jean paul mujer.avif" alt="Perfume La Belle Flower Jean Paul Gaultier 100 ml" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Dulce / Floral</span>
+                <span class="etiqueta">Versátil</span>
+              </div>
+              <h3>La Belle Flower 100 ml</h3>
+              <p class="marca">Jean Paul Gaultier · Dama</p>
+              <p class="descripcion-aroma">Acorde oriental floral y jugoso con flor de loto, bergamota fresca y vainilla.</p>
+              <div class="precio-caja">
+                <span class="precio">$1,931.08 MXN</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-perfume" data-genero="mujer" data-clima="calor" data-aroma="fresco" data-precio="bajo">
+            <div class="caja-imagen">
+              <img src="img/gucci bamboo.webp" alt="Perfume Bamboo Gucci Dama" class="foto-perfume">
+            </div>
+            <div class="info-tarjeta">
+              <div class="etiquetas-grupo">
+                <span class="etiqueta">Fresco / Amaderado</span>
+                <span class="etiqueta">Calor</span>
+              </div>
+              <h3>Bamboo</h3>
+              <p class="marca">Gucci · Dama</p>
+              <p class="descripcion-aroma">Floral amaderado suave y fresco con bergamota, lirio de Casablanca, ylang-ylang y sándalo.</p>
+              <div class="precio-caja">
+                <span class="precio">$1,650.00 MXN</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="tabla-info" class="seccion-tabla">
+      <div class="contenedor">
+        <h2>Guía de Concentraciones</h2>
+        <p class="descripcion-seccion">Referencia de duración promedio y porcentaje de aceites esenciales en cada formato.</p>
+
+        <div class="tabla-contenedor">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Formato</th>
+                <th scope="col">Concentración</th>
+                <th scope="col">Duración en piel</th>
+                <th scope="col">Momento sugerido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Eau de Cologne (EDC)</th>
+                <td>2% – 4%</td>
+                <td>2 horas</td>
+                <td>Día a día / Gimnasio / Salida del baño</td>
+              </tr>
+              <tr>
+                <th scope="row">Eau de Toilette (EDT)</th>
+                <td>5% – 15%</td>
+                <td>4 a 6 horas</td>
+                <td>Oficina / Clima caluroso</td>
+              </tr>
+              <tr>
+                <th scope="row">Eau de Parfum (EDP)</th>
+                <td>15% – 20%</td>
+                <td>8 a 10 horas</td>
+                <td>Tardes, eventos y salidas de noche</td>
+              </tr>
+              <tr>
+                <th scope="row">Parfum / Extrait</th>
+                <td>20% – 40%</td>
+                <td>Más de 12 horas</td>
+                <td>Ocasiones especiales / Clima frío</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-banner-final">
+      <img class="img-abajo" src="img/mandarin-SKY.webp" alt="Mesa de perfumería con frascos de cristal y luz suave">
+    </section>
+
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <p>&copy; 2026 Perfumes Selectos - Catálogo Web</p>
+      <p>Práctica escolar desarrollada con HTML5 y CSS3</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
