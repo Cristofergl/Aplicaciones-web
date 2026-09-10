@@ -1,0 +1,349 @@
+:root {
+  --azul-tapa: #8cb4d6;
+  --azul-suave: #f0f5fa;
+  --azul-marino: #1a365d;
+  --blanco: #ffffff;
+  --fondo: #f0f5fa;
+  --texto: #1a365d;
+  --texto-secundario: #4a5568;
+  --borde: #cbd5e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--azul-marino);
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.encabezado {
+  background-color: #93b5d3; 
+  border-bottom: 1px solid #7ea3c4;
+  padding: 1rem 0;
+}
+.navegacion-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 1.25rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--azul-marino);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.menu a:hover {
+  color: var(--azul-tapa);
+}
+
+.portada {
+  padding: 3.5rem 0;
+  background: linear-gradient(to bottom, var(--blanco), var(--azul-suave));
+  border-bottom: 1px solid var(--borde);
+}
+
+.grid-portada {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.texto-portada p {
+  font-size: 1rem;
+  color: var(--texto-secundario);
+  margin-bottom: 1.5rem;
+}
+
+.boton-principal {
+  display: inline-block;
+  background-color: var(--azul-marino);
+  color: var(--blanco);
+  padding: 0.65rem 1.4rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.boton-principal:hover {
+  background-color: var(--azul-tapa);
+  color: var(--azul-marino);
+}
+
+.imagen-portada img {
+  width: 100%;
+  max-height: 18rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid var(--borde);
+}
+
+.seccion-filtros {
+  padding: 2rem 0;
+  background-color: var(--fondo);
+}
+
+.formulario-filtros fieldset {
+  background-color: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+}
+
+.formulario-filtros legend {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--azul-marino);
+  padding: 0 0.4rem;
+}
+
+.rejilla-filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.campo-filtro label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: var(--azul-marino);
+}
+
+.campo-filtro select {
+  width: 100%;
+  padding: 0.55rem;
+  border: 1px solid var(--borde);
+  border-radius: 0.25rem;
+  background-color: var(--blanco);
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--texto);
+}
+
+.acciones-filtro {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.boton-filtro {
+  background-color: var(--azul-tapa);
+  color: var(--azul-marino);
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-filtro:hover {
+  background-color: var(--azul-marino);
+  color: var(--blanco);
+}
+
+.seccion-catalogo {
+  padding: 3rem 0;
+  background-color: var(--blanco);
+}
+
+.descripcion-seccion {
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  color: var(--texto-secundario);
+}
+
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta-perfume {
+  border: 1px solid var(--borde);
+  border-radius: 0.4rem;
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+}
+
+.caja-imagen {
+  background-color: var(--azul-suave);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  height: 14rem;
+  border-bottom: 1px solid var(--borde);
+}
+
+.foto-perfume {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.info-tarjeta {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.etiquetas-grupo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.etiqueta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.45rem;
+  border-radius: 0.2rem;
+  background-color: var(--azul-suave);
+  color: var(--azul-marino);
+  border: 1px solid var(--azul-tapa);
+}
+
+.marca {
+  font-size: 0.85rem;
+  color: var(--texto-secundario);
+  margin-bottom: 0.75rem;
+}
+
+.descripcion-aroma {
+  font-size: 0.85rem;
+  color: var(--texto-secundario);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.precio-caja {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--borde);
+}
+
+.precio {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--azul-marino);
+}
+
+.seccion-tabla {
+  padding: 3rem 0;
+  background-color: var(--azul-suave);
+}
+
+.tabla-contenedor {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--blanco);
+  border: 1px solid var(--borde);
+}
+
+thead {
+  background-color: var(--azul-marino);
+  color: var(--blanco);
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--borde);
+  font-size: 0.9rem;
+}
+
+tbody tr:hover {
+  background-color: var(--azul-suave);
+}
+
+.seccion-banner-final {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.img-abajo {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.pie-pagina {
+  background-color: var(--azul-marino);
+  color: var(--blanco);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.85rem;
+}
+
+.pie-pagina p {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 48rem) {
+  .navegacion-flex {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .grid-portada {
+    grid-template-columns: 1fr;
+  }
+}
