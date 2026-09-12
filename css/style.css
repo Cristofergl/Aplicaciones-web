@@ -54,10 +54,11 @@ h3 {
 }
 
 .encabezado {
-  background-color: #93b5d3; 
+  background-color: #93b5d3;
   border-bottom: 1px solid #7ea3c4;
   padding: 1rem 0;
 }
+
 .navegacion-flex {
   display: flex;
   justify-content: space-between;
@@ -78,7 +79,7 @@ h3 {
 }
 
 .menu a:hover {
-  color: var(--azul-tapa);
+  color: var(--blanco);
 }
 
 .portada {
@@ -117,10 +118,11 @@ h3 {
 
 .imagen-portada img {
   width: 100%;
-  max-height: 18rem;
+  max-height: 20rem;
   object-fit: cover;
   border-radius: 0.5rem;
   border: 1px solid var(--borde);
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.08);
 }
 
 .seccion-filtros {
@@ -313,24 +315,86 @@ tbody tr:hover {
   background-color: var(--azul-suave);
 }
 
-.seccion-banner-final {
-  width: 100%;
-  margin-top: 2rem;
+/* Banner Destacado / Alta Gama */
+.banner-destacado {
+  padding: 3.5rem 0;
+  background: linear-gradient(to bottom, var(--blanco), var(--azul-suave));
+  border-top: 1px solid var(--borde);
+  border-bottom: 1px solid var(--borde);
 }
 
-.img-abajo {
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.banner-texto {
+  color: var(--texto);
+}
+
+.subtitulo-editorial {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  color: var(--azul-marino);
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.banner-texto h2 {
+  color: var(--azul-marino);
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.banner-texto p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--texto-secundario);
+  margin-bottom: 1.75rem;
+}
+
+.btn-editorial {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  background-color: #93b5d3;
+  color: var(--azul-marino);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-editorial:hover {
+  background-color: var(--azul-marino);
+  color: var(--blanco);
+}
+
+.banner-foto img {
   width: 100%;
-  height: 320px;
+  max-height: 20rem;
   object-fit: cover;
-  display: block;
+  border-radius: 0.5rem;
+  border: 1px solid var(--borde);
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.08);
 }
 
 .pie-pagina {
-  background-color: var(--azul-marino);
-  color: var(--blanco);
+  background-color: #93b5d3;
+  color: var(--azul-marino);
   text-align: center;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   font-size: 0.85rem;
+  border-top: 1px solid #7ea3c4;
+  font-weight: 500;
 }
 
 .pie-pagina p {
@@ -343,7 +407,11 @@ tbody tr:hover {
     gap: 0.75rem;
   }
 
-  .grid-portada {
+  .grid-portada, .banner-grid {
     grid-template-columns: 1fr;
+  }
+
+  .banner-texto {
+    margin: 0 auto;
   }
 }
